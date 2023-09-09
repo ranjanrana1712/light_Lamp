@@ -19,13 +19,13 @@
                 <li><a href="">Affordable</a></li>
                 
             </ul>
-            <button type="button"><span></span></button>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
 
         </nav>
 
         <div class="lamp-container">
             <img src="./img/images/lamp.png" class="lamp" alt="">
-            <img src="./img/images/light.png" class="light" alt="">
+            <img src="./img/images/light.png" class="light" id="light" alt="">
             
         </div>
 
@@ -40,14 +40,35 @@
             <a href="">Check All Collections</a>
 
             <div class="control">
-                <p>04</p>
-                <div class="line"></div>
-                <p>05</p>
+                <p></p>
+                <div class="line"> <span></span> </div>
+                <p></p>
+
+                <p></p>
+                <div class="line"> <span></span> </div>
+                <p></p>
+
+                <p></p>
+                <div class="line"> <span></span> </div>
+                <p></p>
+
 
             </div>
         </div>
 
     </div>
+    <!-- to include js -->
+    <script>
+            // we are getting the element of html using getElementById
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function togglebtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+
+    </script>
     
     
 </body>

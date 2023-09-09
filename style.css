@@ -25,7 +25,7 @@ nav{
 
 nav .menu-img{
     width: 25px;
-    margin-right: 20px;
+    margin-right: 15px;
     cursor: pointer;
 
 }
@@ -63,6 +63,7 @@ button{
     border: 0;
     outline: 0;
     cursor: pointer;
+    transition: 0.5s;
 
 }
 
@@ -74,6 +75,7 @@ button span{
     width: 26px;
     border-radius: 50%;
     margin-left: 2px;
+    transition: 0.5s, margin-left 0.5s;
 }
 
 .lamp-container{
@@ -88,13 +90,16 @@ button span{
     width: 100%;
 }
 .light{
+    opacity: 0;
     position: absolute;
-    top: 90%;
+    top: 98%;
     left: 50%;
     /* to move the element over x or y axis */
     transform: translate(-50%);
     width: 700px;
     margin-left: -10px;
+    transition: opacity 0.5s;
+
 }
 .text-container{
     max-width: 600px;
@@ -124,6 +129,10 @@ button span{
     align-items: center;
     justify-content: flex-end;
     margin-top: 150px;
+    
+
+
+
 }
 .control .line{
     width: 250px;
@@ -131,4 +140,26 @@ button span{
     background: #fff;
     margin: 0 20px;
     border-radius: 2px;
+}
+
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+
+/* to change the backgroud of button */
+.active{
+    background: green;
+
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
 }
